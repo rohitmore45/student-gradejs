@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students marks sheet </title>
+    <link rel="stylesheet" href="./grade.css">
+</head>
+
+<body>
+    <table>
+        <caption>Marks Report</caption>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="stdname" autofocus></td>
+        </tr>
+
+        <tr>
+            <td>Roll No.:</td>
+            <td><input type="text" id="rollno"></td>
+        </tr>
+
+        <tr>
+            <td><b>Marks in</b></td>
+        </tr>
+
+        <tr>
+            <td>HTML:</td>
+            <td><input type="text" id="html" maxlength="3"></td>
+        </tr>
+
+        <tr>
+            <td>CSS:</td>
+            <td><input type="text" id="css" maxlength="3"></td>
+        </tr>
+
+        <tr>
+            <td>JavaScript:</td>
+            <td><input type="text" id="js" maxlength="3"></td>
+        </tr>
+
+        <tr>
+            <td>BootStrap:</td>
+            <td><input type="text" id="bs" maxlength="3"></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"><button onclick="getResult()">Get Result</button></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <div id="result">
+                    <output id="studname"></output><br>
+                    <output id="studrollno"></output><br>
+                    <output id="total"></output><br>
+                    <output id="average"></output><br>
+                    <output id="grade"></output><br>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="./grade.js"></script>
+</body>
+
+</html>
